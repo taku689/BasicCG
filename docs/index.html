@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta content="text/html" charset="UTF-8">
+        <title>CGの基礎</title>
+        <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
+        <script data-main="./static/js/app.js" src="./static/js/modules/require.js"></script>
+    </head>
+    <body>
+        <canvas id="app_canvas" width="600" height="400"> </canvas>
+        <canvas id="top_view_canvas" width="600" height="400"> </canvas>
+        <br />
+        <p> カメラの動かし方 j:下, k:上, h:左, l:右 </p>
+        <form>
+            <a href="#" id="create_object" class="btn btn-default" type="submit">オブジェクトの作成</a>
+            <a href="#" id="reset" class="btn btn-default" type="submit">リセット</a>
+            <a href="#" id="three_way_dead_lock" class="btn btn-default" type="submit">三すくみ</a>
+            <a href="#" id="penetration" class="btn btn-default" type="submit">貫通</a>
+        </form>
+        <form class="form-inline">
+            <a href="#" id="move_object" class="btn btn-default">オブジェクトの移動</a>
+                <div class="form-group">
+                <input type="number" class="form-control" id="move_x" placeholder="x" value="0">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="move_y" placeholder="y" value="0">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="move_z" placeholder="z" value="0">
+            </div>
+        </form>
+        <form class="form-inline">
+            <a href="#" id="scale_object" class="btn btn-default">オブジェクトの拡大縮小</a>
+                <div class="form-group">
+                <input type="number" class="form-control" id="scale_x" placeholder="x" value="1">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="scale_y" placeholder="y" value="1">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="scale_z" placeholder="z" value="1">
+            </div>
+        </form>
+        <form class="form-inline">
+            <a href="#" id="rotate_object" class="btn btn-default">オブジェクトの回転</a>
+                <div class="form-group">
+                <input type="number" class="form-control" id="rotate_x" placeholder="x" value="0">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="rotate_y" placeholder="y" value="0">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="rotate_z" placeholder="z" value="0">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="not_back_default" value="true"> 原点に戻らない
+                </label>
+            </div>
+        </form>
+        <form class="form-inline">
+            <a href="#" id="move_screen" class="btn btn-default">クリッピング面、スクリーンの移動</a>
+                <div class="form-group">
+                <input type="number" class="form-control" id="front_clipping" placeholder="前方クリッピング面" >
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="back_clipping" placeholder="後方クリッピング面" >
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="screen" placeholder="スクリーン" >
+            </div>
+        </form>
+    </body>
+</html>
