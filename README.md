@@ -3,7 +3,7 @@
 # コンピュータ・グラフィックスの基礎
 
 ## デモ
-<a href="https://dl.dropboxusercontent.com/u/65829624/BasicCGApp/index.html">BasicCGApp</a>
+<a href="https://taku689.github.io/BasicCG/.">BasicCGApp</a>
 
 ## 概要
 ### コンピュータ・グラフィックスとは
